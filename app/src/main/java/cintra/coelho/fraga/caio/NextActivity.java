@@ -13,9 +13,13 @@ public class NextActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.actvity_next);
+        //Declaração de uma intenççao com a função de pegar uma intenção
         Intent intent = getIntent();
+        //Declaração de uma string virá da intenção onde tiver a o dicionário com a chave texto
         String textoArmzenado = intent.getStringExtra("texto");
+        //Declaração de TextView que corresponderá ao id
         TextView tvExibir = findViewById(R.id.tvExibir);
+        //Declaração de colocar no TextView o textoArmazenado
         tvExibir.setText(textoArmzenado);
     }
 }
